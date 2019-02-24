@@ -1,0 +1,30 @@
+
+USE francodb;
+CREATE TABLE polytopes (
+ name VARCHAR(128),
+ nickname VARCHAR(128),
+ vertices VARCHAR(16),
+ edges VARCHAR(16),
+ faces VARCHAR(16),
+ solids VARCHAR(16),
+ symmetries VARCHAR(16),
+ id INT UNSIGNED NOT NULL AUTO_INCREMENT KEY) ENGINE MyISAM;
+ 
+INSERT INTO polytopes (
+name, nickname, vertices, edges, faces, solids, symmetries)
+VALUES ('pentachoron','5-cell','5','10','10','5','120');
+INSERT INTO polytopes (
+name, nickname, vertices, edges, faces, solids, symmetries)
+VALUES ('octachoron','8-cell','16','32','24','8','384');
+INSERT INTO polytopes (
+name, nickname, vertices, edges, faces, solids, symmetries)
+VALUES ('hexadecachoron','16-cell','8','24','32','16','384');
+INSERT INTO polytopes (
+name, nickname, vertices, edges, faces, solids, symmetries)
+VALUES ('icositetrachoron','24-cell','24','96','96','24','1152');
+INSERT INTO polytopes (
+name, nickname, vertices, edges, faces, solids, symmetries)
+VALUES ('dodecacontachoron','120-cell','600','1200','720','120','14400');
+INSERT INTO polytopes (
+name, nickname, vertices, edges, faces, solids, symmetries)
+VALUES ('hexacosichoron','600-cell','120','720','1200','600','14400');
